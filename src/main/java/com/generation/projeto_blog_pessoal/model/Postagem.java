@@ -15,11 +15,11 @@ public class Postagem {
     private Long id;
 
     @NotBlank
-    @Size(min=4,max=100, message="O atributo titulo, no minimo 5 e maximo 100")
+    @Size(min=5,max=100, message="O atributo titulo, no minimo 5 e maximo 100")
     private String titulo;
 
     @NotBlank
-    @Size(min = 10, max =1000)
+    @Size(min = 10, max =1000, message= "O  atributo titulo deve conter no minimo 10 maximo 1000 caracteres")
     private String texto;
 
     @UpdateTimestamp
