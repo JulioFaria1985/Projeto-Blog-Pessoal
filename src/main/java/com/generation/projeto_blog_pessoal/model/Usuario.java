@@ -44,7 +44,8 @@ public class Usuario {
         this.foto = foto;
     }
 
-    public Usuario() {  }
+    public Usuario() {
+    }
 
     public Long getId() {
         return this.id;
@@ -87,11 +88,10 @@ public class Usuario {
     }
 
     public List<Postagem> getPostagem() {
-        return this.postagem;
+        return postagem;
     }
 
     public void setPostagem(List<Postagem> postagem) {
         this.postagem = postagem;
     }
-
 }
